@@ -1,0 +1,11 @@
+int find_repeated(int* arr){
+	int i,count[101];
+	for(i=0;i<101;i++)
+	count[i]=0;
+	for(i=0;i<100;i++){
+		if(count[arr[i]]>0)
+		return arr[i];
+		else
+		count[arr[i]]++;
+		}
+	}
